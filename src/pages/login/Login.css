@@ -79,7 +79,6 @@
   -o-transition: 0.3s;
   transition: 0.3s; 
   border: 1px solid rgb(175, 175, 175);
-  /* border: 1px solid gray; */
 }
 
 ::placeholder{
