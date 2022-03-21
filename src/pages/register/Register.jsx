@@ -1,9 +1,11 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Register.css'
 
+
 function Register() {
+    const navigate = useNavigate()
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -18,7 +20,8 @@ function Register() {
                 email,
                 password,
             });
-            res.data && window.location.replace("/");
+            res.data && navigate("/login")
+            //    window.location.replace("/login");
         } catch (err) {
             setError(true);
         }
