@@ -18,7 +18,7 @@ function Register() {
                 email,
                 password,
             });
-            res.data && window.location.replace("/login");
+            res.data && window.location.replace("/");
         } catch (err) {
             setError(true);
         }
