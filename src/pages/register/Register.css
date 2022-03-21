@@ -4,23 +4,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: 
+    url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
   background-size: cover;
 }
 
 .registerTitle {
-  font-size: 50px;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgb(26, 25, 25);
+  letter-spacing: 7px;
 }
 
 .registerForm {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+
 }
+
+label{
+font-size: 20px;
+font-weight: 500;
+}
+
+
 
 .registerForm > label {
   margin: 10px 0;
@@ -30,6 +39,15 @@
   padding: 10px;
   background-color: white;
   border: none;
+  background: transparent;
+  border: none;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; 
+  border: 1px solid rgb(175, 175, 175);
 }
 
 .registerButton {
@@ -41,15 +59,23 @@
   border-radius: 10px;
   padding: 10px;
 }
+.registerButton:hover{
+  background-color: rgb(0, 87, 87);
+
+}
 
 .registerLoginButton {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: lightcoral;
+  background-color: rgb(231, 64, 64);
   cursor: pointer;
   border: none;
-  padding: 10px;
+  font-weight: 500;
+  padding: 10px 20px;
   color: white;
   border-radius: 10px;
+}
+.registerLoginButton:hover{
+  background-color: rgb(219, 18, 18);
 }

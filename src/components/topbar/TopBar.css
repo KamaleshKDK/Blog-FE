@@ -18,8 +18,9 @@
   justify-content: center;
 }
 .topLeft{
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 10px;
+  font-weight: 700;
   /* margin-right: 20%; */
 }
 .topCenter {
@@ -47,7 +48,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   /* margin-right: 45%; */
 }
@@ -124,16 +125,31 @@
     display: none !important;
   }
   .logOut{
-    display: none !important;
+    /* display: none !important; */
+  }
+  .topListItem{
+    font-weight: 400;
+    margin-left: 23px;
+    margin-top: 22px;
+  }
+  .login-top{
+     display: none !important;
+  }
+  .register-top{
+     display: none !important;
   }
 .animate-character{
   font-size: 20px;
   margin-right: 40%;
   /* margin-top: 30%; */
+  display: none !important;
+
 }
 .gify{
   /* margin-top: 9%; */
 margin-right: 20%;
+display: none !important;
+
 }
 
 }

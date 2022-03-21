@@ -1,20 +1,21 @@
+.loginTitle {
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgb(26, 25, 25);
+  letter-spacing: 7px;
+}
 .login {
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background: 
+    url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80");
   background-size: cover;
 }
 
-.loginTitle {
-  font-size: 50px;
-}
 
 .loginForm {
   margin-top: 20px;
@@ -26,22 +27,20 @@
   margin: 10px 0;
 }
 
-.loginInput {
-  padding: 10px;
-  background-color: white;
-  border: none;
-}
 
 .loginButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: rgb(231, 64, 64);
   border: none;
   color: white;
   border-radius: 10px;
   padding: 10px;
 }
+.loginButton:hover{
+  background-color: rgb(219, 18, 18);
 
+}
 .loginButton:disabled{
   cursor: not-allowed;
   background-color: rgb(252, 173, 173);
@@ -58,3 +57,38 @@
   color: white;
   border-radius: 10px;
 }
+.loginRegisterButton:hover{
+  background-color: rgb(0, 87, 87);
+}
+
+.img-background{
+  height: calc(100vh - 50px);
+  background:url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80");
+  background-size: cover;
+}
+.loginInput {
+  padding: 10px;
+  color: white;
+  border: none;
+  background: transparent;
+  border: none;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; 
+  border: 1px solid rgb(175, 175, 175);
+  /* border: 1px solid gray; */
+}
+
+::placeholder{
+  color: rgb(77, 77, 77);
+  font-weight: 400;
+}
+label{
+  font-size: 20px;
+  font-weight: 600;
+  color: wheat;
+  }
+  

@@ -13,7 +13,7 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <Link className="link" to="/">
+        <Link className="link animate-character" to="/">
           MY BLOGGER
         </Link>
 
@@ -41,12 +41,12 @@ export default function TopBar() {
             ?
             <>
               <ul className="topList">
-                <li className="topListItem">
+                <li className="topListItem login-top">
                   <Link className="link" to="/login">
                     LOGIN
                   </Link>
                 </li>
-                <li className="topListItem">
+                <li className="topListItem register-top">
                   <Link className="link" to="/register">
                     REGISTER
                   </Link>
@@ -57,7 +57,7 @@ export default function TopBar() {
             <>
               {console.log(user)}
               <img className="gify" src="https://i.pinimg.com/originals/f0/f6/6e/f0f66e9196fe55d62653cf56c3585435.gif" style={{ width: "40px", marginRight: "5px" }} alt="" />
-              <span className=' ml-auto animate-charcter '><pre className='logo-text animate-character'>Welcome! <strong style={{ fontSize: '25x' }}>{user.username || user[0].username}</strong></pre></span>
+              <span className=' ml-auto animate-charcter '><pre className='logo-text animate-character'>Welcome <strong style={{ fontSize: '25x' }}>{user.username || user[0].username}!</strong></pre></span>
             </>
         }
       </div>

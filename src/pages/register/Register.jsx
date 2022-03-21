@@ -28,27 +28,27 @@ function Register() {
     };
     return (
         <div className="register">
-            <span className="registerTitle">Register</span>
+            <span className="registerTitle">REGISTER</span>
             <form className="registerForm" onSubmit={handleSubmit}>
                 <label>Username</label>
                 <input
                     type="text"
                     className="registerInput"
-                    placeholder="Enter your username..."
+                    placeholder="Enter Username"
                     onChange={(e) => setUsername(e.target.value)}
                 />
-                <label>Email</label>
+                <label className='label-email' >Email</label>
                 <input
                     type="text"
                     className="registerInput"
-                    placeholder="Enter your email..."
+                    placeholder="Enter Email"
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <label>Password</label>
                 <input
                     type="password"
                     className="registerInput"
-                    placeholder="Enter your password..."
+                    placeholder="Enter Password"
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 <button className="registerButton" type="submit">
@@ -56,9 +56,9 @@ function Register() {
                 </button>
             </form>
             <button className="registerLoginButton">
-                <Link className="link" to="/login">
+                 <Link className="link" to="/login">
                     Login
-                </Link>
+                </Link> 
             </button>
             {error && <span style={{ color: "red", marginTop: "10px" }}>Something went wrong!</span>}
         </div>
