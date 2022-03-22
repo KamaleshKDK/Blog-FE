@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Post({ post }) {
   return (
+
     <>
+
+      
+
       <section class="text-center">
         <div className="col-lg-4 col-md-12 mb-6 card post">
           {post.photo &&
@@ -13,7 +17,7 @@ function Post({ post }) {
                 src={post.photo}
                 alt="" />
             </Link>}
-        
+
           <div className="postInfo">
             <div className="postCats">
               {post.categories.map((c) => (

@@ -126,6 +126,7 @@
   }
   .logOut{
     /* display: none !important; */
+    margin-left: 10%;
   }
   .topListItem{
     font-weight: 400;
@@ -139,7 +140,7 @@
      display: none !important;
   }
 .animate-character{
-  font-size: 20px;
+  font-size: 10px;
   margin-right: 40%;
   /* margin-top: 30%; */
   display: none !important;
@@ -155,3 +156,22 @@ display: none !important;
 }
   
 
+@media only screen and (min-width: 320px) and (max-width: 1010px) {
+
+  .animate-character{
+    font-size: 20px;
+    margin-right: 20%;
+
+  }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+
+  .animate-character{
+    font-size: 20px;
+    margin-right: 20%;
+
+  }
+
+}

@@ -120,21 +120,20 @@ export default function Write() {
       <form className="writeForm" onSubmit={handleSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
-            <i className="writeIcon fas fa-plus"></i>
+            <i className=" writeIcon fas fa-plus"></i>
           </label>
           <input
             type="file"
             name="image"
             id="fileInput"
             style={{ display: "none" }}
-            // onChange={(e) => setFile(e.target.files[0])}
             onChange={handleFileInputChange}
             value={fileInputSatate}
           />
           <input
             type="text"
             placeholder="Title"
-            className="writeInput"
+            className="writeInput titleInput-style"
             autoFocus={true}
             onChange={e => setTitle(e.target.value)}
           />

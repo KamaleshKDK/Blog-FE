@@ -31,7 +31,6 @@
   font-size: 20px;
   color: rgb(121, 118, 118);
   cursor: pointer;
- 
 }
 
 .writeInput {
@@ -62,16 +61,16 @@
   cursor: pointer;
   font-size: 16px;
 }
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 .write{
-  right: 50%;
+  /* right: 50%;
+  margin-right: 20%; */
 }
 .writeIcon{
-  margin-right: 20%;
+  /* margin-right: 40%; */
 }
 .writeImg{
-  margin-right: 20%;
+  /* margin-right: 30%; */
 }
 }
   
