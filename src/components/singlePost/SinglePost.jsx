@@ -41,8 +41,8 @@ function SinglePost() {
       try {
         await axios.put(`https://my-blogger-be.herokuapp.com/api/posts/${post._id}`, {
           username: user.username,
-          title : title.title,
-          desc : desc.desc,
+          title : title,
+          desc : desc,
         });
         setUpdateMode(false)
       } catch (err) {}
