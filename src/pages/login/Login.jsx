@@ -13,10 +13,11 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("https://my-blogger-be.herokuapp.com/api/auth/login", {
+      const res = await axios.post("https://my-blogger-be.herokuapp.com/api/login/login", {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
+     
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
@@ -89,11 +90,11 @@ export default function Login() {
             Login
           </button>
         </form>
-      <button className="loginRegisterButton">
-        <Link className="link" to="/register">
-          Register
-        </Link>
-      </button>
+        <button className="loginRegisterButton">
+          <Link className="link" to="/register">
+            Register
+          </Link>
+        </button>
       </div>
     </>
   );

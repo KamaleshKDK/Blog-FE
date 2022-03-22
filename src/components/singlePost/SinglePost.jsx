@@ -8,16 +8,16 @@ import './SinglePost.css';
 
 function SinglePost() {
 
+    const { user } = useContext(Context);
 
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
-    const PF = "https://my-blogger-be.herokuapp.com/images/";
-    const { user } = useContext(Context);
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [updateMode, setUpdateMode] = useState(false);
-  
+    
+    
     useEffect(() => {
       const getPost = async () => {
         const res = await axios.get("https://my-blogger-be.herokuapp.com/api/posts/" + path);
@@ -41,8 +41,8 @@ function SinglePost() {
       try {
         await axios.put(`https://my-blogger-be.herokuapp.com/api/posts/${post._id}`, {
           username: user.username,
-          title,
-          desc,
+          title : title.title,
+          desc : desc.desc,
         });
         setUpdateMode(false)
       } catch (err) {}
@@ -52,7 +52,7 @@ function SinglePost() {
         <div className="singlePost">
             <div className="singlePostWrapper">
                 {post.photo && (
-                    <img src={PF + post.photo} alt="" className="singlePostImg" />
+                    <img src={post.photo} alt="" className="singlePostImg" />
                 )}
                 {updateMode ? (
                     <input
