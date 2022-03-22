@@ -31,10 +31,11 @@ export default function Write() {
     }
   }
 
+// Uploading Image
 
   const uploadImage = async (base64EncodedImage) => {
     try {
-      const datas = await axios.post("http://localhost:5000/api/upload", {
+      const datas = await axios.post("https://my-blogger-be.herokuapp.com/api/upload", {
         data: base64EncodedImage
       })
       setFile(datas.data.url)
