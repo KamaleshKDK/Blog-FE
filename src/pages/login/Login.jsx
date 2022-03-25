@@ -26,49 +26,7 @@ export default function Login() {
 
   return (
     <>
-      {/* <body class="img js-fullheight  img-background">
-        <section class="ftco-section">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Login</h2>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-4">
-                <div class="login-wrap p-0">
-                 
-                  <form onSubmit={handleSubmit} class="signin-form">
-                    <div class="form-group">
-                      <input type="text"
-                        class="form-control"
-                        placeholder="Username"                     
-                        ref={userRef} 
-                        required />
-                    </div>
-                    <div class="form-group">
-                      <input id="password-field"
-                       type="password" 
-                       class="form-control"
-                        placeholder="Password"                               
-                        ref={passwordRef}
-                         required />
-                      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                    </div>
-                    <div class="form-group">
-                      <button type="submit" disabled={isFetching} class="form-control btn btn-primary submit px-3">Sign In</button>
-                    </div>
-                    <div class="form-group d-md-flex">
-                    </div>
-                  </form>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </body> */}
-
+    
       <div className="login">
         <span className="loginTitle">LOGIN</span>
         <form className="loginForm" onSubmit={handleSubmit}>
