@@ -3,11 +3,11 @@ function Footer() {
     return (
         <>
 
-            <footer class="bg-light text-lg-start">
-                <hr class="m-0" />
-                <div class="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2);" }}>
+            <footer className="bg-light text-lg-start">
+                <hr className="m-0" />
+                <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
                     © 2022 Copyright : 
-                    <a class="text-dark" href="https://my-blogger-kamalesh-k13h11.netlify.app/" className="link"> My Blogger</a>
+                    <a className="text-dark" href="https://my-blogger-kamalesh-k13h11.netlify.app/" className="link"> My Blogger</a>
                 </div>
             </footer>
         </>

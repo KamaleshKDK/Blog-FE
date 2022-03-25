@@ -38,6 +38,7 @@ export default function Write() {
       const datas = await axios.post("https://my-blogger-be.herokuapp.com/api/upload", {
         data: base64EncodedImage
       })
+      console.log(base64EncodedImage)
       setFile(datas.data.url)
       setFileInputState('');
       setPreviewSource('');
@@ -55,7 +56,7 @@ export default function Write() {
     e.preventDefault();
     toast.warning('Uploading data..! Please wait for a while', {
       position: "top-right",
-      autoClose: 7000
+      autoClose: 5000
     });
 
     const newPost = {

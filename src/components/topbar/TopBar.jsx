@@ -5,7 +5,6 @@ import "./TopBar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  console.log(user)
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
@@ -54,7 +53,7 @@ export default function TopBar() {
             </>
             :
             <>
-              {console.log(user)}
+              
               <img className="gify" src="https://i.pinimg.com/originals/f0/f6/6e/f0f66e9196fe55d62653cf56c3585435.gif" style={{ width: "40px", marginRight: "5px" }} alt="" />
               <span className=' ml-auto animate-charcter '><pre className='logo-text animate-character'>Welcome <strong style={{ fontSize: '25x' }}>{user.username || user[0].username}!</strong></pre></span>
             </>
