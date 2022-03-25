@@ -5,16 +5,17 @@
   align-items: center;
   justify-content: center;
   background: 
-    url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    url("../login/keyboard-498396_1920.jpg");
   background-size: cover;
 }
 
 .registerTitle {
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 600;
-  color: rgb(26, 25, 25);
-  letter-spacing: 7px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .registerForm {
@@ -27,6 +28,7 @@
 label{
 font-size: 20px;
 font-weight: 500;
+color: black;
 }
 
 
@@ -37,7 +39,7 @@ font-weight: 500;
 
 .registerInput {
   padding: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   background: transparent;
   border: none;
