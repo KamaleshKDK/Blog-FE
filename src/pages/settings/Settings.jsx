@@ -13,7 +13,7 @@ function Settings() {
     const [success, setSuccess] = useState(false);
 
     const { user, dispatch } = useContext(Context);
-    // const PF = "http://localhost:5000/images/"
+    // const PF = "https://my-blogger-be.herokuapp.com/images/"
 
     const handleSubmit = async (e) => {
         e.preventDefault();
