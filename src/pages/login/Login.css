@@ -54,7 +54,7 @@
   cursor: pointer;
   border: none;
   padding: 5px 10px;
-  color: white;
+  color: rgb(255, 255, 255) !important;
   border-radius: 10px;
 }
 .loginRegisterButton:hover{
