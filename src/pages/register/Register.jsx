@@ -3,13 +3,12 @@ import { useState } from 'react'
 import { Link }   from 'react-router-dom'
 import './Register.css'
 
-
 function Register() {
 
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState(false);
+    const [error, setError] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,8 +21,12 @@ function Register() {
             });
         
             res.data &&   window.location.replace("/login");
-        } catch (err) {
-            setError(true);
+        } catch (error) {
+            if (error.response &&
+                error.response.status >= 400 &&
+                error.response.status <= 500) {
+                setError(error.response.data.message)
+            }
         }
     };
     return (
@@ -51,6 +54,10 @@ function Register() {
                     placeholder="Enter Password"
                     onChange={(e) => setPassword(e.target.value)}
                 />
+
+                 {
+                 error && <div className="error_msg">{error}</div>
+                  }
                 <button className="registerButton" type="submit">
                     Register
                 </button>
