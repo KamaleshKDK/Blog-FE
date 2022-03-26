@@ -68,6 +68,8 @@ export default function Login() {
             placeholder="Enter password"
             ref={passwordRef}
           />
+          <br></br>
+          <div>Username : guest |<span> Password : Guest@123</span></div>
 
            {
                error && <div className="error_msg">{error}</div>
