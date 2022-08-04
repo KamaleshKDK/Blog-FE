@@ -11,7 +11,7 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <Link className="link animate-character" to="/">
+        <Link className="link animate-character mb-4" to="/">
           MY BLOGGER
         </Link>
 

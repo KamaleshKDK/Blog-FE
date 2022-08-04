@@ -96,6 +96,7 @@
   color: #fff;
   background-clip: text;
   -moz-text-fill-color: transparent;
+  font-family: Merienda;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
