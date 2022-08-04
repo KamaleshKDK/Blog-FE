@@ -1,6 +1,6 @@
 .top {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background-color: white;
   position: sticky;
   top: 0;
@@ -93,10 +93,10 @@
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
+  font-family: Merienda;
   color: #fff;
   background-clip: text;
   -moz-text-fill-color: transparent;
-  font-family: Merienda;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
