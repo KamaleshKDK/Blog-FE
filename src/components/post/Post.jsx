@@ -9,7 +9,7 @@ function Post({ post }) {
       
 
       <section class="text-center">
-        <div className="col-lg-4 col-md-12 mb-6 card post">
+        <div className="col-lg-4 col-md-12 mb-5 card post">
           {post.photo &&
             <Link to={`/post/${post._id}`}
               className="link">
